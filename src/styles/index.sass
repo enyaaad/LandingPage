@@ -1,5 +1,158 @@
+@import '_variables.sass'
+
 @font-face
-  font-family: 'Inter'
-  src: url('../fonts/Inter.ttf')
+  font-family: 'RKF'
+  src: url('../fonts/RKF.ttf')
+body
+  padding: 0
+  margin: 0
+  min-height: 100vh
+  background-color: $background-color
+main
+  display: flex
+  flex-direction: column
+.main__first-container
+  min-height: calc(100vh - 25px)
+  width: auto
+  background-color: $background-color
+  flex: 1
+.header__menu
+  font-family: RKF, serif
+  text-decoration: none
+  display: flex
+  flex-direction: row
+  justify-content: center
+  margin: 0
+  height: 25px
+  background-color: $background-color
+.first-container__mainText
+  position: relative
+  margin-top: 20%
+  display: flex
+  flex-direction: column
+  align-items: center
+.first-container__name-text
+  font-family: RKF, serif
+  color: $font-color
+  margin-right: 6vw
+  font-size: 2em
+.first-container__name-text-additional
+  font-family: RKF, serif
+  color: $font-color
+  margin-left: 6vw
+  padding-top: 1vw
+  font-size: 1.5em
+.link-menu
+  color: $background-color
+  list-style: none
+  text-decoration: none
+.main__second-container
+  display: flex
+  flex-direction: row
+  justify-content: center
+  height: 100%
+  width: auto
+  background-color: $font-color
+  flex: 1
+.second-container-text
+  margin-top: 2vh
+  font-family: RKF, serif
+  font-size: 1.5em
+  margin-right: 7vw
+.second-container-Picture
+  margin-top: 5vh
+  margin-bottom: 5vh
+  height: 500px
+  width: 350px
+.main__third-container
+  height: 100%
+  width: auto
+  background-color: $background-color
+  flex: 1
+
+.third-container-pictureSpan
+  display: grid
+  grid-template-columns: repeat(2,0.1fr)
+  grid-gap: 3vh
+  justify-content: center
+  margin: 5vh 0 5vh 0
+  padding-left: 5vh
+picture:nth-child(2)
+  transition-delay: 200ms
+picture:nth-child(4)
+  transition-delay: 400ms
+picture:nth-child(6)
+  transition-delay: 600ms
+.third-container-Picture
+  height: 100px
+  width: 100px
+
+.third-container-text
+  display: flex
+  justify-content: center
+  font-family: RKF, serif
+  color: $font-color
+  font-size: 2em
+.main__fourth-container
+  height: 100%
+  width: auto
+  background-color: $font-color
+  flex: 1
+.fourth-container-text
+  display: flex
+  justify-content: center
+  font-family: RKF, serif
+  color: $background-color
+  font-size: 2em
+
+a:hover
+  background-color: rgb(70,70,70)
+
+.slider
+  background-color: $font-color
+  height: 350px
+  padding: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.slider #slider_image
+  background-color: rgb(50,50,50)
+  height: 400px
+  min-width: 400px
 
 
+
+.slider button
+  width: 70px
+  height: 70px
+  margin: 30px
+  border: none
+  border-radius: 100%
+  padding: 0
+  background: none
+
+.slider button img
+  width: 50px
+  height: 50px
+
+.slider #left img
+  transform: rotate(180deg)
+
+.slider button:hover
+  opacity: 80%
+  cursor: pointer
+
+.hidden
+  opacity: 0
+  filter: blur(5px)
+  transform: translateX(-100%)
+  transition: all 1s
+.show
+  filter: blur(0px)
+  transform: translateX(0)
+  opacity: 1
+
+@media(prefers-reduced-motion)
+  .hidden
+    transition: none

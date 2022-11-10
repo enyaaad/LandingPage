@@ -1,0 +1,22 @@
+@import '_variables.sass'
+
+.main__dots-container
+  position: absolute
+  left: 20%
+  top: 30%
+  display: grid
+  grid-template-columns: repeat(3,0.01fr)
+  filter: blur(4px)
+.main__dots-container-second
+  position: absolute
+  left: 70%
+  top: 60%
+  display: grid
+  grid-template-columns: repeat(3,0.01fr)
+  filter: blur(4px)
+.main__dots.dot
+  border-radius: 50%
+  background-color: $font-color
+  height: 1vh
+  width: 1vh
+  margin: 3vh 3vh 3vh 3vh
