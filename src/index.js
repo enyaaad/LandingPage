@@ -1,4 +1,7 @@
+import '@/styles/reset.css'
 import '@/styles/index.sass'
+import '@/styles/slider.sass'
 import '@/styles/dots.sass'
+import '@/styles/media.sass'
 import '@/js/example'
 import '@/js/fadeout'
