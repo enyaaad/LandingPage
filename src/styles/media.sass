@@ -8,8 +8,12 @@
   body
     main
       .main__second-container
+        padding: 3vh 5vw 5vh 5vw
         .second-container-text
           font-size: 1em
+          line-height: 3vw
+          margin-bottom: 3vh
+
 @media (max-width: 320px)
   body
     main
@@ -17,10 +21,8 @@
       .main__second-container
         .second-container-text
           font-size: 0.6em
-          margin: 0 0 0 0
-          padding: 0 5% 0 5%
-
-@media (max-width: 320px)
+  .main__dots.dot
+    display: none
   .slider #slider_image
     height: 25vh
     min-width: 25vh

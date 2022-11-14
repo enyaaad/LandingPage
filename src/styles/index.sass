@@ -12,8 +12,8 @@ body
     display: flex
     flex-direction: row
     justify-content: center
-    margin-left: 1vw
     background-color: $background-color
+    flex-grow: 0.1
     a
       color: $font-color
     a:hover
@@ -59,7 +59,7 @@ body
       background-color: $font-color
       flex: 1
       padding: 3vh 0 5vh 0
-      line-height: 3em
+      line-height: 3vw
       .second-container-text
         font-family: RKF, serif
         font-size: 1.5em
@@ -109,6 +109,28 @@ body
         color: $background-color
         font-size: 2em
         margin-bottom: 5vh
+  footer
+    height: 100%
+    width: auto
+    background-color: $background-color
+    .content
+      padding: 1vh 0 1vh 0
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-evenly
+      a
+        text-decoration: none
+      span
+        font-family: RKF, serif
+        color: $font-color
+        font-size: 1.5em
+      .footer_logo
+        min-height: 30px
+        min-width: 30px
+        height: 3vw
+        width: 3vw
+        margin: 0 1vw 0 1vw
 picture:nth-child(2)
   transition-delay: 200ms
 picture:nth-child(4)
