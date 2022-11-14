@@ -4,8 +4,6 @@
   font-family: 'RKF'
   src: url('../fonts/RKF.ttf')
 body
-  padding: 0
-  margin: 0
   min-height: 100vh
   background-color: $background-color
   .header__menu
@@ -14,9 +12,13 @@ body
     display: flex
     flex-direction: row
     justify-content: center
-    margin: 0
-    height: 25px
+    margin-left: 1vw
+    vertical-align: center
     background-color: $background-color
+    a
+      color: $font-color
+    a:hover
+      color: rgb(86, 102, 121)
   .link-menu
     color: $background-color
     list-style: none
@@ -25,7 +27,7 @@ body
     display: flex
     flex-direction: column
     .main__first-container
-      min-height: calc(100vh - 25px)
+      min-height: calc(100vh - 15px)
       width: auto
       background-color: $background-color
       flex: 1
@@ -55,14 +57,15 @@ body
       width: auto
       background-color: $font-color
       flex: 1
+      padding: 3vh 0 5vh 0
+      line-height: 3em
       .second-container-text
-        padding-top: 2vh
         font-family: RKF, serif
         font-size: 1.5em
         margin-right: 7vw
+        #aboutMe
+          font-weight: bold
       .second-container-Picture
-        padding-top: 5vh
-        padding-bottom: 5vh
         height: 45vh
         width: 20vw
         min-height: 350px
@@ -74,12 +77,12 @@ body
       width: auto
       background-color: $background-color
       flex: 1
-      .third-container-pictureSpan
+      padding: 3vh 0 5vh 0
+      .third-container-pictures
         display: grid
         grid-template-columns: repeat(2,0.1fr)
         grid-gap: 3vh
         justify-content: center
-        padding: 5vh 0 5vh 0
         justify-items: center
         align-items: center
       .third-container-Picture
@@ -91,19 +94,20 @@ body
         font-family: RKF, serif
         color: $font-color
         font-size: 2em
+        margin-bottom: 3vh
     .main__fourth-container
       height: 100%
       width: auto
       background-color: $font-color
       flex: 1
+      padding: 3vh 0 5vh 0
       .fourth-container-text
         display: flex
         justify-content: center
         font-family: RKF, serif
         color: $background-color
         font-size: 2em
-a:hover
-  background-color: rgb(70,70,70)
+        margin-bottom: 5vh
 picture:nth-child(2)
   transition-delay: 200ms
 picture:nth-child(4)
