@@ -13,7 +13,6 @@ body
     flex-direction: row
     justify-content: center
     margin-left: 1vw
-    vertical-align: center
     background-color: $background-color
     a
       color: $font-color
@@ -27,13 +26,15 @@ body
     display: flex
     flex-direction: column
     .main__first-container
+      display: flex
+      flex-direction: column
+      justify-content: space-around
       min-height: calc(100vh - 15px)
       width: auto
       background-color: $background-color
       flex: 1
       .first-container__mainText
         position: relative
-        padding-top: 20%
         display: flex
         flex-direction: column
         align-items: center
